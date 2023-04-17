@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav{
+    background-color: aliceblue;
+    display: flex;
+    height: 100px;
+    margin-bottom: 30px;
+
+}
+.title_logo {
+    font-family: 'Jura', sans-serif;
+    
+    margin: 0;
+}
+nav, ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.nav-div{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-div1{
+    background-color: antiquewhite;
+    width: 200px;
+}
+.nav-div2{
+    background-color: azure;
+    width: 100%;
+}
+
+
+        /* BANNER START */
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-color:blueviolet ;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    margin-bottom: 30px;
+}
+
+      /* SECTION START */
+
+.grid-section1{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr ; */
+    /* gap: 10px; */
+    margin-bottom: 30px;
+    grid-auto-flow: column;
+    
+}
+.grid-section1Items{
+   background-color: brown;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.G-item1{
+    background: plum;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-size: cover;
+}
+.G-item2 {
+    background: url(/images/white-flower-with-cooking-ingredients-table.jpg);
+    background-size: cover;
+    grid-column: 2/4;
+    grid-row: 1/4;
+}
+.G-item3 {
+    background: lightpink;
+    background-size: cover;
+    grid-column: 4/5;
+    grid-row: 1/4;
+}
+.G-item4 {
+    background: url(/images/copy-space-ingredients-cookies.jpg);
+    background-size: cover;
+    grid-column: 1/3;
+        grid-row: 4/6;
+}
+.G-item5 {
+    background: url(/images/pexels-mariana-kurnyk-1775045.jpg);
+    background-size: cover;
+    grid-column: 3/4.5;
+        grid-row: 4/6;
+}
+.G-item6 {
+    background: url(/images/pexels-pixabay-207111.jpg);
+    background-size: cover;
+    grid-column: 4/5;
+        grid-row: 4/6;
+}
+
+
+/* SECTION 2 */
+
+.section2{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sect2-1{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    flex: 25%, 25%, 50%;
+}
+.section2stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.section2stats h3 {
+    color: blue;
+}
+.sect2child1{
+    background: palevioletred;
+    flex-grow: 3;
+    height: 30vh;
+
+}
+.sect2child2{
+    background: url(/images/arrangement-delicious-bread-dead-ingredients.jpg);
+    background-size: cover;
+    flex-grow: 3;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sect2child3{
+    background: rosybrown;
+   flex-grow: 8;
+    height: 30vh;
+}
